@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical"
-              android:background="#0000"
-    >
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000"
+    android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp">
 
         <com.lol.lol.view.RoundImageView
-            android:paddingTop="15dp"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:src="@drawable/ic_launcher"
             imagecontrol:border_inside_color="#bc0978"
             imagecontrol:border_outside_color="#ba3456"
-            imagecontrol:border_thickness="1dp"/>
+            imagecontrol:border_thickness="1dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:text="vampire"
+            android:textColor="@color/material_blue_100" />
     </LinearLayout>
 
     <LinearLayout
@@ -26,30 +34,34 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
-        android:orientation="vertical">
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <ImageView
+                android:scaleX="0.7"
+                android:scaleY="0.7"
                 android:id="@+id/one"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                />
+                android:src="@drawable/menu_friend_cycle" />
 
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="15dp"
                 android:layout_toRightOf="@id/one"
-                android:text="第1个Item"
+                android:text="我的动态"
                 android:textColor="#f0f0f0"
-                android:textSize="20sp"/>
+                android:textSize="12sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -57,23 +69,25 @@
             android:layout_height="wrap_content">
 
             <ImageView
+                android:scaleX="0.7"
+                android:scaleY="0.7"
                 android:id="@+id/two"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                />
+                android:src="@drawable/menu_download" />
 
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="15dp"
                 android:layout_toRightOf="@id/two"
-                android:text="第2个Item"
+                android:text="我的下载"
                 android:textColor="#f0f0f0"
-                android:textSize="20sp"/>
+                android:textSize="12sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -81,23 +95,25 @@
             android:layout_height="wrap_content">
 
             <ImageView
+                android:scaleX="0.7"
+                android:scaleY="0.7"
                 android:id="@+id/three"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                />
+                android:src="@drawable/menu_subscribe" />
 
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="15dp"
                 android:layout_toRightOf="@id/three"
-                android:text="第3个Item"
+                android:text="我的订阅"
                 android:textColor="#f0f0f0"
-                android:textSize="20sp"/>
+                android:textSize="12sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -105,48 +121,54 @@
             android:layout_height="wrap_content">
 
             <ImageView
+                android:scaleX="0.7"
+                android:scaleY="0.7"
                 android:id="@+id/four"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                />
+                android:src="@drawable/menu_favorite" />
 
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="15dp"
                 android:layout_toRightOf="@id/four"
-                android:text="第一个Item"
+                android:text="我的收藏"
                 android:textColor="#f0f0f0"
-                android:textSize="20sp"/>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/five"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                />
-
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="20dp"
-                android:layout_toRightOf="@id/five"
-                android:text="第5个Item"
-                android:textColor="#f0f0f0"
-                android:textSize="20sp"/>
+                android:textSize="12sp" />
         </RelativeLayout>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="15dp"
+        android:paddingBottom="15dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/menu_setting" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/three"
+            android:text="设置"
+            android:textColor="#f0f0f0"
+            android:textSize="12sp" />
+
+    </LinearLayout>
 </LinearLayout>
