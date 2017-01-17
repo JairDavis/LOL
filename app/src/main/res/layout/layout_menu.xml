@@ -12,6 +12,7 @@
         android:layout_height="wrap_content">
 
         <com.lol.lol.view.RoundImageView
+            android:paddingTop="15dp"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:src="@drawable/ic_launcher"
